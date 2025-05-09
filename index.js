@@ -39,6 +39,6 @@ app.get('/pronote', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Serveur API Pronote lancé sur http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Serveur prêt sur le port ${port}`);
 });
